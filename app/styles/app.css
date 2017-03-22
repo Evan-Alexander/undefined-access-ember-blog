@@ -1,0 +1,21 @@
+.jumbotron {
+  background-image: url('./img/jumbo.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 350px;
+}
+
+body {
+  background: #060e1b;
+  overflow: hidden;
+  /*z-index: 4;*/
+}
+
+canvas {
+  //opacity: 0.5;
+  height: 250px;
+}
+
+.container {
+  background-color: #fff;
+}
