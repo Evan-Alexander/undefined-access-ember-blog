@@ -1,1 +1,6 @@
-{{outlet}}
+<h2>{{model.title}}</h2>
+<h4>post by: {{model.author}}</h4>
+
+{{update-blog blog=model update="update"}}
+
+{{blog-detail blog=model destroyBlog="destroyBlog"}}
