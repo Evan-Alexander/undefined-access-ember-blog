@@ -10,10 +10,10 @@ body {
   /*overflow: hidden;*/
 }
 
-canvas {
+/*canvas {
   //opacity: 0.5;
-  /*height: 250px;*/
-}
+  height: 250px;
+}*/
 
 .container {
   background-color: #fff;
