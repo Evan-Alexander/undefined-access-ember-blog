@@ -1,11 +1,11 @@
 <h1>Welcome to Undefined-Access</h1>
 <h3>Where undefined variables are our frienz</h3>
-{{new-blog saveBlog2="saveBlog1"}}
+{{new-blog saveBlog2="saveBlog3"}}
 <br>
 <br>
 <ul>
   {{#each model as |blog|}}
-    {{blog-tile blog=blog}}
+    {{blog-tile blog=blog destroyBlog="destroyBlog"}}
   {{/each}}
 
 </ul>
