@@ -22,7 +22,7 @@ module.exports = function(environment) {
       authDomain: "undefined-access.firebaseapp.com",
       databaseURL: "https://undefined-access.firebaseio.com",
       storageBucket: "undefined-access.appspot.com",
-      // messagingSenderId: "192465720134"
+      messagingSenderId: "192465720134"
     },
 
     APP: {
