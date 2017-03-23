@@ -2,9 +2,9 @@
   <h2>{{model.title}}</h2>
   <h4>post by: <span class="orange">{{model.author}}</span></h4>
 
-  {{update-blog blog=model update="update"}}
 
   {{new-comment saveComment="saveComment" blog=model}}
+  {{update-blog blog=model update="update"}}
   {{blog-detail blog=model destroyBlog="destroyBlog" destroyComment="destroyComment"}}
 
 

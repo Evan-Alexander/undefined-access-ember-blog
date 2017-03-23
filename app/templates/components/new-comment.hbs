@@ -10,8 +10,8 @@
         <div class="form-group">
           <label for="content">Post</label>
           {{textarea value=content id="content" class="form-control"}}
+          <button class="btn save" {{action 'saveComment'}}>Save</button>
         </div>
-        <button class="btn" {{action 'saveComment'}}>Save</button>
       </form>
     </div>
   </div>
