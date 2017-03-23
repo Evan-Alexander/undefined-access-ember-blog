@@ -11,16 +11,24 @@
 <hr>
 {{new-comment saveComment="saveComment"}}
 <hr>
+<div class="well">
 <h2>Comments</h2>
+<div class="well white">
 <ul>
-  {{#each model.comments as |comment|}}
-  <div class="row">
-    <div class="col-lg-6">
-      <li>{{comment.author}}</li>
+    {{#each model.comments as |comment|}}
+    <li>
+    <div class="row">
+      <div class="col-lg-6">
+        {{comment.author}}
+      </div>
+      <div class="col-lg-6">
+        {{comment.content}}
+      </div>
     </div>
-    <div class="col-lg-6">
-      {{comment.content}}
-    </div>
-  </div>
-  {{/each}}
+  </li>
+  <br>
+  <hr>
+    {{/each}}
 </ul>
+</div>
+</div>

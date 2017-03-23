@@ -21,7 +21,9 @@ li {
   width: 450px;
 }
 
-
+.white {
+  background-color: #fff;
+}
 /*canvas {
 //opacity: 0.5;
 height: 250px;
