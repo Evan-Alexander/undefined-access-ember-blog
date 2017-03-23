@@ -5,3 +5,12 @@
 {{blog.content}}
 </p>
 </div>
+
+<div class="well white">
+  <h2>Comments</h2>
+<ul>
+{{#each blog.comments as |comment|}}
+  {{comment-tile comment=comment}}
+{{/each}}
+</ul>
+</div>

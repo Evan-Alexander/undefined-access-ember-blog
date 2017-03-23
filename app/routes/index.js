@@ -7,7 +7,6 @@ export default Ember.Route.extend({
       comments: this.store.findAll('comment')
     });
   },
-
   actions: {
     saveBlog1(params) {
       var newBlog = this.store.createRecord('blog', params);
