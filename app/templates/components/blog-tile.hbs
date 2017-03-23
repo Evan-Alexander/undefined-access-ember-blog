@@ -5,10 +5,11 @@
         <img src={{blog.image}}>
       </div>
       <div class="col-lg-6">
-        <h4>
+        <h5>
           author: {{blog.author}}
-        </h4>
-        <p>{{blog.title}}</p>
+        </h5>
+        <h3>{{blog.title}}</h3>
+        <p>{{blog.teaser}}</p>
         {{#link-to 'blog' blog.id}}read more{{/link-to}}
       </div>
     </div>
