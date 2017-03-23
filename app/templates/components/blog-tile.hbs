@@ -1,16 +1,16 @@
 <li>
   <div class="well">
-    <img src={{blog.image}}>
     <div class="row">
-      <div class="col-m-6">
+      <div class="col-lg-6">
+        <img src={{blog.image}}>
+      </div>
+      <div class="col-lg-6">
         <h4>
           author: {{blog.author}}
         </h4>
-        <p>{{blog.content}}</p>
-        <!-- {{update-blog blog=blog update="update"}} -->
-        <!-- <button {{action 'delete' blog}}>Delete</button> -->
+        <p>{{blog.title}}</p>
+        {{#link-to 'blog' blog.id}}read more{{/link-to}}
       </div>
     </div>
-    {{#link-to 'blog' blog.id}}read more{{/link-to}}
   </div>
 </li>

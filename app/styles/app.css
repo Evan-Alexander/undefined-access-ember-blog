@@ -7,14 +7,22 @@
 
 body {
   background: #060e1b;
-  /*overflow: hidden;*/
 }
 
-/*canvas {
-  //opacity: 0.5;
-  height: 250px;
-}*/
+li {
+  list-style-type: none;
+}
 
 .container {
   background-color: #fff;
 }
+
+.row img {
+  width: 450px;
+}
+
+
+/*canvas {
+//opacity: 0.5;
+height: 250px;
+}*/
