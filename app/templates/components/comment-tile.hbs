@@ -1,14 +1,9 @@
-<div class=" main-page well">
-  <div class="row">
+<div class="main-page well">
     <li>
-      <div class="col-lg-6">
-        comment by: <span class="orange">{{comment.author}}</span>
-      </div>
-      <div class="col-lg-6">
-        {{comment.content}}
-      </div>
+      {{comment.content}}
+      <br>
+      <br>
+      comment by: <span class="orange">{{comment.author}}</span>
       <button class="btn" {{action 'delete' comment}}>Delete</button>
     </li>
-  </div>
-  <hr>
 </div>
