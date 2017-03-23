@@ -6,7 +6,16 @@ export default Ember.Route.extend({
   },
   actions: {
     destroyBlog(blog) {
-      blog.destroyRecord();
+      var comment_deletions = blog.get('comments').map(function(comment) {
+        return comment.destroyRecord();
+      });
+      Ember.RSVP.all(comment_deletions).then(function() {
+        return blog.destroyRecord();
+      });
+      this.transitionTo('index');
+    },
+    destroyComment(comment) {
+      comment.destroyRecord();
       this.transitionTo('index');
     },
     update(blog, params) {
