@@ -1,6 +1,10 @@
-<h1>Welcome to Undefined-Access</h1>
-<h3>Where undefined variables are our frienz</h3>
-{{new-blog saveBlog="saveBlog"}}
+<header class="main-page">
+  <p>Welcome to Undefined-Access</p>
+  <p>Where undefined variables are our frienz</p>
+</header>
+<span id='button-float'>
+  {{new-blog saveBlog="saveBlog"}}
+</span>
 <br>
 <br>
 <ul>
@@ -9,25 +13,3 @@
   {{/each}}
 </ul>
 <hr>
-<hr>
-<div class="well">
-<h2>Comments</h2>
-<div class="well white">
-<ul>
-    {{#each model.comments as |comment|}}
-    <li>
-    <div class="row">
-      <div class="col-lg-6">
-        {{comment.author}}
-      </div>
-      <div class="col-lg-6">
-        {{comment.content}}
-      </div>
-    </div>
-  </li>
-  <br>
-  <hr>
-    {{/each}}
-</ul>
-</div>
-</div>

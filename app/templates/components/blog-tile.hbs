@@ -1,17 +1,19 @@
-<li>
-  <div class="well">
-    <div class="row">
-      <div class="col-lg-6">
-        <img src={{blog.image}}>
-      </div>
-      <div class="col-lg-6">
-        <h5>
-          author: {{blog.author}}
-        </h5>
-        <h3>{{blog.title}}</h3>
-        <p>{{blog.teaser}}</p>
-        {{#link-to 'blog' blog.id}}read more{{/link-to}}
+<div class="blog-tile">
+  <li>
+    <div class="well">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src={{blog.image}}>
+        </div>
+        <div class="col-lg-6">
+          <h5>
+            author: {{blog.author}}
+          </h5>
+          <h3>{{blog.title}}</h3>
+          <p>{{blog.teaser}}</p>
+          {{#link-to 'blog' blog.id}}read more{{/link-to}}
+        </div>
       </div>
     </div>
-  </div>
-</li>
+  </li>
+</div>
