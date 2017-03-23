@@ -7,7 +7,7 @@ export default Ember.Component.extend({
       this.set('addNewBlog', true);
     },
 
-    saveBlog1() {
+    saveBlog() {
       var params = {
         author: this.get('author'),
         date: Date.now(),
@@ -16,7 +16,7 @@ export default Ember.Component.extend({
         image: this.get('image')
       };
       this.set('addNewBlog', false);
-      this.sendAction('saveBlog2', params);
+      this.sendAction('saveBlog', params);
     }
   }
 });
