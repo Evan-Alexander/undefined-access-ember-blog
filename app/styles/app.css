@@ -79,6 +79,10 @@ footer {
   background-color: #fff;
 }
 
+.orange {
+  color: orange;
+}
+
 .blog-tile .well {
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
@@ -87,6 +91,9 @@ footer {
   border-radius: 10px;
   margin-bottom: 45px;
   /*border: solid 2px red;*/
+  padding: 30px;
+  text-align: justify;
+  font-size: 18px;
 }
 
 .blog-tile .well a {
@@ -105,10 +112,20 @@ footer {
   text-align: center;
 }
 
-#button-float .btn {
+#button-float .btn, .btn {
   background-color: black;
   color: #fff;
   float: right;
+}
+
+
+#blog-detail {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  box-shadow: 1px 3px 15px, inset 1px -3px 10px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 45px;
 }
 /*canvas {
 //opacity: 0.5;

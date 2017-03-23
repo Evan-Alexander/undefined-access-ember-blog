@@ -1,8 +1,11 @@
-<h2>{{model.title}}</h2>
-<h4>post by: {{model.author}}</h4>
+<div class="main-page">
+  <h2>{{model.title}}</h2>
+  <h4>post by: <span class="orange">{{model.author}}</span></h4>
 
-{{update-blog blog=model update="update"}}
+  {{update-blog blog=model update="update"}}
 
-{{blog-detail blog=model destroyBlog="destroyBlog" destroyComment="destroyComment"}}
+  {{new-comment saveComment="saveComment" blog=model}}
+  {{blog-detail blog=model destroyBlog="destroyBlog" destroyComment="destroyComment"}}
 
-{{new-comment saveComment="saveComment" blog=model}}
+
+</div>

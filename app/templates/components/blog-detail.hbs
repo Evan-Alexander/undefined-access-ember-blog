@@ -1,12 +1,14 @@
-<button {{action 'delete' blog}}>Delete</button>
+<div class="blog-tile">
+<button class="btn" {{action 'delete' blog}}>Delete</button>
 <div class="well">
-<img src={{blog.image}}/>
+<!-- <img src={{blog.image}}/> -->
 <p>
 {{blog.content}}
 </p>
 </div>
+</div>
 
-<div class="well white">
+<div class="blog-tile">
   <h2>Comments</h2>
 <ul>
 {{#each blog.comments as |comment|}}
