@@ -8,3 +8,17 @@
     {{blog-tile blog=blog}}
   {{/each}}
 </ul>
+<hr>
+  <h2>Comments</h2>
+  <ul>
+    {{#each model.comments as |comment|}}
+    <div class="row">
+      <div class="col-lg-6">
+        <li>{{comment.author}}</li>
+      </div>
+      <div class="col-lg-6">
+        {{comment.content}}
+      </div>
+  </div>
+    {{/each}}
+  </ul>
