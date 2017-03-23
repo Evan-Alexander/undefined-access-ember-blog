@@ -8,5 +8,6 @@ export default DS.Model.extend({
   teaser: Ember.computed("content", function(){
     return this.get("content").substring(0, 140) + "...";
   }),
-  image: DS.attr()
+  image: DS.attr(),
+  comments: DS.hasMany('comment', { async: true })
 });
