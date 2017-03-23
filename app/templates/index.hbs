@@ -4,12 +4,11 @@
 <br>
 <br>
 <ul>
-  {{#each model as |blog|}}
+  {{#each model.blogs as |blog|}}
     {{blog-tile blog=blog}}
   {{/each}}
 </ul>
 <hr>
-{{new-comment saveComment="saveComment"}}
 <hr>
 <div class="well">
 <h2>Comments</h2>
